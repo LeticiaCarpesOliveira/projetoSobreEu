@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt- BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreEu</title>
+
+    <style>
+        body{
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1D1F24;
+        }
+/* ------------------------------------------- */
+        header{
+            padding: 0 100px 0 100px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .titleHeader{
+            font-weight: 400;
+            color: #d31c25;
+        }
+
+
+        .navHeader{
+            width: 500px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+
+        ul>li>a{
+           text-decoration: none;
+           font-weight: 500;
+           color: #d31c25;
+        }
+
+        ul>li>a:hover{
+            color: #FFFFFF;
+            border-bottom: 2px solid #d31c25;
+        }
+/* -------------------------------------------- */
+        main{
+            padding: 0 100px 0 100px;
+
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+/* ------------------------------------------ */
+        .containerMain{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .containerMain>p{
+            width: 600px;
+            color: #FFFFFF;
+            font-size: 17px;
+        }
+/* --------------------------------------------- */
+        .divMain{
+            margin-top: 40px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .divMain>h1{
+            font-weight: 400;
+            color: #d31c25;
+        }
+
+        .divMain>h1:hover{
+            color: #FFFFFF;
+            border-bottom: 2px solid #d31c25;
+        }
+
+        .divImage:hover{
+            animation: rotate 2s ease-in-out infinite;
+        }
+
+
+        @keyframes rotate {
+            from {
+        transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+
+        }
+
+/* ----------------------------------------------*/
+
+
+        footer{
+            margin: 50px 0  50px 0;
+            padding: 0 100px 0 100px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titleFooter{
+            font-weight:400;
+            color: #d31c25;
+        }
+
+        .titleFooter:hover{
+            color: #FFFFFF;
+            border-bottom: 2px solid #d31c25;
+        }
+
+        .divFooter{
+            /* border: 2px solid red; */
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .divFooter>a{
+            /* border: 2px solid white; */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <h1 class="titleHeader">SobreEU</h1>
+
+        <nav class="navHeader">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#sobreMim">INFORMAÇÕES</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="sobreMim">
+        <section class="containerMain">
+            <img src="images/leticia.jpg" alt="Letícia Carpes de oliveira" style="height: 340px; width: 350px; border-radius: 50%;">
+
+            <p>Ao iniciar o meu ensino médio surgiram dúvidas a respeito de qual área me profissionalizar... Desta forma, ao conseguir uma oportunidade em um curso do SENAI em parceria com a FORD, obtive meu primeiro contato com a área da tecnologia em si. <br><br> Com o desenvolvimento do curso, que estava relacionado a área Front-End, adquiri o interesse pela construção de interfaces interativas e com isso nasceu o objetivo de me desenvolver no ramo. Desde então, meu foco sempre foi fazer o técnico em Desenvolvimento de Sistemas, e aqui estou atualmente. <br><br> Desejo me aperfeiçoar cada vez mais, e tenho certeza que o técnico irá constribuir para o meu desenvolvimento técnico e comportamental, para que assim, busque um curso superior e entre no mercado de TI</p>
+        </section>
+
+        <div class="divMain">
+            <h1>Tecnologias Estudadas</h1>
+
+            <div class="divTec">
+                <a href="https://www.w3schools.com/html/default.asp"><img src="./images/icons8-html-96.png" alt="Html" class="divImage"></a>
+
+                <a href="https://www.w3schools.com/css/default.asp"><img src="./images/icons8-css-96.png" alt="Css" class="divImage"></a>
+
+                <a href="https://www.w3schools.com/js/default.asp"><img src="./images/icons8-javascript-96.png" alt="JavaScript" class="divImage"></a>
+
+                <a href="https://github.com/"><img src="./images/icons8-github-96.png" alt="GitHub" class="divImage"></a>
+
+                <a href="https://www.w3schools.com/git/default.asp?remote=github"><img src="./images/icons8-git-96.png" alt="Git" class="divImage"></a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contato">
+        <h1 class="titleFooter">Contato</h1>
+
+        <div class="divFooter">
+            <a href="https://github.com/leCarpes"><img src="./images/github.png" alt="GitHub">Portfólio</a>
+ 
+            <a href="https://www.linkedin.com/in/let%C3%ADcia-carpes-b34aa1302"><img src="./images/linkedin.png" alt="GitHub">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
